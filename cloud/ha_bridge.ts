@@ -1,5 +1,6 @@
 import POT_056905_WW from './devices/POT_056905_WW'
 import WTDN3 from './devices/WTDN3'
+import N17 from './devices/N17'
 import RAC_056905_WW from './devices/RAC_056905_WW'
 import WIN_056905_WW from './devices/WIN_056905_WW'
 import Dev_2REF11EIDA__4 from './devices/2REF11EIDA__4'
@@ -59,6 +60,7 @@ const t2deviceTypes: Record<string, T2Factory> = {
     ['WMVEM1825']: Dev_WMVEM1825,
     ['WMVEL2137']: Dev_WMVEL2137,
     ['WLSI_633_']: Dev_WLSI_633_,
+    ['N17']: N17, // LG LDNPQ445S dishwasher (BK7234 platform, reports the board id "N17")
     ['Y_V8_Y___W.B32QEUK']: Y_V8_Y___W_B32QEUK,
     ['F_V7_Y___W.B_2QEUK']: F_V8_Y___W_B_2QEUK, // NOTE: we reuse F_V8_Y___W_B_2QEUK as the models appear to be compatible
     ['F_V7_Y___W.B__QEUK']: F_V8_Y___W_B_2QEUK, // LG F2V5PS0W front-load washer - confirmed working, status/course/spin/temp/energy/remaining_time all decode correctly against a real unit
